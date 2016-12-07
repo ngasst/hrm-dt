@@ -7,7 +7,7 @@ const webpack = require('webpack');
 const helpers = require('./helpers');
 const path = require('path');
 
-const webpackTargetElectronRenderer = require('webpack-target-electron-renderer');
+const webpackTargetElectronRenderer = require('./webpack-target-electron-renderer.js');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
 
 /*
@@ -117,11 +117,11 @@ var config = {
                  *
                  * See: https://github.com/wbuchwalter/tslint-loader
                  */
-                tslint: {
+                /*tslint: {
                     emitErrors: false,
                     failOnHint: false,
                     resourcePath: 'src'
-                },
+                },*/
             }
         }),
     ],
